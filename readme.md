@@ -1,7 +1,10 @@
-# Laravel Homestead with Vaprobash scripts
+# Laravel Homestead Vaprobash scripts
 
-Replace the Vagrantfile in your homestead directory with the one here.
-Unomment the scripts you'd like to run. 
+1. Add vaprobash.rb to the homestead/scripts directory
+2. Unomment the scripts you'd like to run in vaprobash.rb.
+3. Add the following to the end of the Vagrantfile in your homestead directory
+
+    require path + '/scripts/vaprobash.rb'
 
 Official Laravel Homestead documentation [is located here](http://laravel.com/docs/homestead?version=4.2).
 
